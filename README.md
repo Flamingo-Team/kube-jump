@@ -5,8 +5,8 @@
 该系统是在[jumpserver](https://github.com/jumpserver/jumpserver)的基础上调用了k8s的远程接口，实现密钥注入功能，并使用[coco](https://github.com/jumpserver/coco)登录到k8s集群的容器，最终实现了基于k8s的全功能运维堡垒机系统。
 该系统包含两部分：kube-jump和kube-coco;
 
-#### kube-jump: 堡垒机管理系统
-#### kube-coco: 堡垒机登录终端系统
+#### [kube-jump](https://github.com/Flamingo-Team/kube-jump.git): 堡垒机管理系统
+#### [kube-coco](https://github.com/Flamingo-Team/kube-coco.git): 堡垒机登录终端系统
 
 安装时，根据[jumpserver官方安装指南](http://docs.jumpserver.org/zh/docs/step_by_step.html#jumpserver)安装即可，需要注意的是，在执行**2.7**（修改 Jumpserver 配置文件）之前，到数据库创建一个库，文件在[sql](https://github.com/Flamingo-Team/kube-jump/blob/master/jumpserver/utils/K8S_k8skeyinfo.sql)，创建后，继续执行下面的步骤即可。
 
