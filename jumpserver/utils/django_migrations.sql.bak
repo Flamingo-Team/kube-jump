@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.1.73, for redhat-linux-gnu (x86_64)
+--
+-- Host: 172.18.208.48    Database: jumpserver
+-- ------------------------------------------------------
+-- Server version	5.6.36-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `django_migrations`
+--
+
+DROP TABLE IF EXISTS `django_migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_migrations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `app` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `applied` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_migrations`
+--
+
+LOCK TABLES `django_migrations` WRITE;
+/*!40000 ALTER TABLE `django_migrations` DISABLE KEYS */;
+INSERT INTO `django_migrations` VALUES (1,'assets','0001_initial','2018-08-30 07:00:39.298013'),(2,'assets','0002_auto_20180830_1435','2018-08-30 07:00:40.272029'),(3,'audits','0001_initial','2018-08-30 07:00:40.293976'),(4,'contenttypes','0001_initial','2018-08-30 07:00:40.313928'),(5,'contenttypes','0002_remove_content_type_name','2018-08-30 07:00:40.360240'),(6,'auth','0001_initial','2018-08-30 07:00:40.421956'),(7,'auth','0002_alter_permission_name_max_length','2018-08-30 07:00:40.436994'),(8,'auth','0003_alter_user_email_max_length','2018-08-30 07:00:40.450309'),(9,'auth','0004_alter_user_username_opts','2018-08-30 07:00:40.463100'),(10,'auth','0005_alter_user_last_login_null','2018-08-30 07:00:40.475999'),(11,'auth','0006_require_contenttypes_0002','2018-08-30 07:00:40.481219'),(12,'auth','0007_alter_validators_add_error_messages','2018-08-30 07:00:40.494888'),(13,'auth','0008_alter_user_username_max_length','2018-08-30 07:00:40.508133'),(14,'auth','0009_alter_user_last_name_max_length','2018-08-30 07:00:40.520658'),(15,'captcha','0001_initial','2018-08-30 07:00:40.536786'),(16,'common','0001_initial','2018-08-30 07:00:40.554006'),(17,'django_celery_beat','0001_initial','2018-08-30 07:00:40.626178'),(18,'django_celery_beat','0002_auto_20161118_0346','2018-08-30 07:00:40.662632'),(19,'django_celery_beat','0003_auto_20161209_0049','2018-08-30 07:00:40.681837'),(20,'django_celery_beat','0004_auto_20170221_0000','2018-08-30 07:00:40.694128'),(21,'django_celery_beat','0005_add_solarschedule_events_choices','2018-08-30 07:00:40.706520'),(22,'django_celery_beat','0006_auto_20180210_1226','2018-08-30 07:00:40.741759'),(23,'ops','0001_initial','2018-08-30 07:00:40.839638'),(24,'ops','0002_celerytask','2018-08-30 07:00:40.860153'),(25,'users','0001_initial','2018-08-30 07:00:41.322309'),(26,'orgs','0001_initial','2018-08-30 07:00:41.385844'),(27,'users','0002_auto_20171225_1157','2018-08-30 07:00:41.487946'),(28,'users','0003_auto_20180830_1435','2018-08-30 07:00:41.901757'),(29,'perms','0001_initial','2018-08-30 07:00:41.996499'),(30,'perms','0002_auto_20180830_1435','2018-08-30 07:00:42.557507'),(31,'sessions','0001_initial','2018-08-30 07:00:42.575713'),(32,'terminal','0001_initial','2018-08-30 07:00:42.670539'),(33,'terminal','0002_auto_20180830_1435','2018-08-30 07:00:42.940403'),(34,'admin','0001_initial','2019-01-22 07:04:56.160646'),(35,'admin','0002_logentry_remove_auto_add','2019-01-22 07:04:56.201827'),(36,'admin','0003_logentry_add_action_flag_choices','2019-01-22 07:04:56.242501'),(37,'assets','0003_auto_20190122_1504','2019-01-22 07:04:56.479214'),(38,'users','0004_auto_20190122_1504','2019-01-22 07:04:56.625349'),(39,'audits','0002_operatelog_passwordchangelog_userloginlog','2019-01-22 07:04:56.670378'),(40,'common','0002_setting_encrypted','2019-01-22 07:04:56.693015'),(41,'orgs','0002_auto_20190122_1504','2019-01-22 07:04:56.732216'),(42,'perms','0003_auto_20190122_1504','2019-01-22 07:04:56.793529');
+/*!40000 ALTER TABLE `django_migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-01-22 15:28:57
